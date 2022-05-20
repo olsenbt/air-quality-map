@@ -27,7 +27,7 @@ Data sources for map 3 are from [Global Health Data Exchange](https://ghdx.healt
 
 Data sources for map 4 are from [ArcGIS REST Services Directory](https://services1.arcgis.com/4yjifSiIG17X0gW4/arcgis/rest/services/SES_indicators/FeatureServer/1) and show census tracts with their unemployment rates.
 
-Primary Map Functions: Interactive Hover/Click for metadata, Sliding bar, Zoom Button
+**Primary Map Functions:** Interactive Hover/Click for metadata, Sliding bar, Zoom Button
 
 ## Credits
 - [Professor Zhao's GitHub Final Project Guidelines]([https://github.com/jakobzhao/geog458/tree/master/labs/lab04](https://github.com/jakobzhao/geog458/blob/master/project/readme.md))
