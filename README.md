@@ -15,7 +15,7 @@ The significance of our project is to inspire action. Typically, people do not f
 
 An unintended consequence of our project is if people misinterpret that correlation does not imply causation. We solely aim to explore the correlation between health outcomes and our predicted variables (socioeconomic status, AQI index, and facilities by location). We intend to communicate that there may be many other variables that we need to consider. And we would like to preface that that we are not oversimplifying this phenomenon. 
 
-## Targeted Audience
+## Target Audience
 The target audience consists of climate activists, the general public, governments, and legislators in states where air quality is significantly worse and progress needs to be made. Maps that show the correlation between poor air quality and other determinants of negative respiratory health and environmental effects would be helpful in convincing policy-makers to invest in improving air quality and regulate businesses that contribute to air pollution. Climate activists would also be able to access our project on the internet to achieve goals that are similar to our own.
 
 ## Data Sources and Promary Functions
