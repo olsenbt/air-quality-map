@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Chronic Respiratory Disease</title>
+    <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
+    <link href="https://api.mapbox.com/mapbox-gl-js/v2.5.0/mapbox-gl.css" rel="stylesheet">
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.5.0/mapbox-gl.js"></script>
+    <link rel="stylesheet" href="css/map3.css"/>
+</head>
+
+<body>
+    <div id="map"></div>
+    <div class='map-overlay' id='features'>
+        <h2>Chronic Respiratory Disease</h2>
+        <div id='text-escription'>
+            <p>Mortality rate % change is for 1985-2014.
+                Hover over a county!</p>
+            <p style="text-align: right; font-size:10pt">Source: <a href="https://github.com/nytimes/covid-19-data/blob/43d32dde2f87bd4dafbb7d23f5d9e878124018b8/live/us-counties.csv">The New York Times</a></p>
+        </div>
+    </div>
+    <div class='map-overlay' id='legend'></div>
+    <script src="js/map3.js"></script>
+</body>
+
+</html>
