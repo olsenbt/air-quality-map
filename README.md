@@ -3,10 +3,13 @@ Geog 458 Final Project \
 June 8, 2022 \
 Team AC3 Members: Bennett Olsen, Emily Eckey, Michael Tam, Ryan Singh, Trevor Nguyen 
 
-Link to [project](https://olsenbt.github.io/air-quality-map/)
-
 ## Project Introduction
 Our final project looks at the cause and effect of air quality and CO2 emissions in the United States. By showing the impact that air quality can have on health and other factors, this project argues that more strides should be taken to reduce carbon emissions. To address what the root cause of the air quality issue is, this project analyzes factors that cause air pollution such as carbon emissions from industrial facilities, and correlated effects of poor air quality like respiratory disease. To deliver our opinion on the relationship, we use a storymap as our project format. The project includes six pages: a title page to introduce the topic, 3 storymaps on cause and effect, a page about our team, and a page to cite our data sources and give acknowledgement. The scope of the project will be within the United States.
+
+# Maps
+Link to [project](https://olsenbt.github.io/air-quality-map/)
+
+Link to [Map 2](https://olsenbt.github.io/air-quality-map/map2.html)
 
 ## Project Significance and Broader Impacts
 We hope for our project to identify the impact of poor air quality in general and where in the United States people are experiencing its worst effects. Once our project establishes the causes, correlates, and locations of poor air quality, legislators and regulatory agencies would be able to enact restrictions on industry and vehicular emissions. Depending on how our project informs legislators, there are many different approaches that can be taken to try and reduce emissions. Some possible solutions may put restrictions on businesses and negatively impact the economy if businesses need to invest more into reducing their emissions. The qualification of this as a negative impact depends on whether the audience views the economic impact of emission regulation as not with the improvement in air quality.
