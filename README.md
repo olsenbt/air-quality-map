@@ -41,7 +41,7 @@ Data sources for map 4 are from [ArcGIS REST Services Directory](https://service
 - GitHub
 
 ## Credits
-- [Professor Zhao's GitHub Final Project Guidelines]([https://github.com/jakobzhao/geog458/tree/master/labs/lab04](https://github.com/jakobzhao/geog458/blob/master/project/readme.md))
+- [Professor Zhao's GitHub Final Project Guidelines](https://github.com/jakobzhao/geog458/blob/master/project/readme.md)
 
 ## Acknowledgments
 Thank you Professor Zhao and Jiaxin Feng for your assistance with this final project.
