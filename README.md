@@ -3,16 +3,17 @@ Geog 458 Final Project \
 June 8, 2022 \
 Team AC3 Members: Bennett Olsen, Emily Eckey, Michael Tam, Ryan Singh, Trevor Nguyen 
 
+Visit our final project [here](https://olsenbt.github.io/air-quality-map/)!
+
 ## Project Introduction
 Our final project looks at the cause and effect of air quality and CO2 emissions in the United States. By showing the impact that air quality can have on health and other factors, this project argues that more strides should be taken to reduce carbon emissions. To address what the root cause of the air quality issue is, this project analyzes factors that cause air pollution such as carbon emissions from industrial facilities, and correlated effects of poor air quality like respiratory disease. To deliver our opinion on the relationship, we use a storymap as our project format. The project includes six pages: a title page to introduce the topic, 3 storymaps on cause and effect, a page about our team, and a page to cite our data sources and give acknowledgement. The scope of the project will be within the United States.
 
 # Maps
-- Link to [Final Project Index](https://olsenbt.github.io/air-quality-map/)
 - Link to [Map 2](https://olsenbt.github.io/air-quality-map/map2.html)
 - Link to [Map 3](https://olsenbt.github.io/air-quality-map/map3.html)
 - Link to [Map 4](https://olsenbt.github.io/air-quality-map/map4.html)
 
-## Project Significance and Broader Impacts
+## Project Goal, Significance, and Broader Impacts
 We hope for our project to identify the impact of poor air quality in general and where in the United States people are experiencing its worst effects. Once our project establishes the causes, correlates, and locations of poor air quality, legislators and regulatory agencies would be able to enact restrictions on industry and vehicular emissions. Depending on how our project informs legislators, there are many different approaches that can be taken to try and reduce emissions. Some possible solutions may put restrictions on businesses and negatively impact the economy if businesses need to invest more into reducing their emissions. The qualification of this as a negative impact depends on whether the audience views the economic impact of emission regulation as not with the improvement in air quality.
 
 If our project isn’t put into context with other factors in society, some people might attribute the correlates we highlight strictly to air pollution. This means that people could neglect other causes of the things we are observing like chronic respiratory disease and areas of lower income. We will try to avoid people coming to this conclusion by keeping our descriptions and insights within the frame of air quality, reminding viewers that air quality is only one aspect of poor respiratory health, and poor air quality isn’t the only issue that low income communities face.
@@ -34,6 +35,10 @@ Data sources for map 3 are from [Global Health Data Exchange](https://ghdx.healt
 Data sources for map 4 are from [ArcGIS REST Services Directory](https://services1.arcgis.com/4yjifSiIG17X0gW4/arcgis/rest/services/SES_indicators/FeatureServer/1) and show census tracts with their unemployment rates.
 
 **Primary Map Functions:** Interactive Hover/Click for metadata, Sliding bar, Zoom Button
+
+## Applied libraries and Web Services in Use
+- Mapbox
+- GitHub
 
 ## Credits
 - [Professor Zhao's GitHub Final Project Guidelines]([https://github.com/jakobzhao/geog458/tree/master/labs/lab04](https://github.com/jakobzhao/geog458/blob/master/project/readme.md))
