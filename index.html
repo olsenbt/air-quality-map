@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Air Quality in the United States</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--add required stylesheets-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <!--leaflet css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.4.0/leaflet.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
+
+    <!--add favicon for the web page-->
+    <link rel="shortcut icon" href="../../img/favicon.ico" type="image/x-icon">
+
+    <!--Fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Cairo" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="../../dist/storymap.2.5.css">
+    
+    <!--add required libraries-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.4.0/leaflet.js"></script>
+    <!--jquery-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+
+    <!--boostrap-->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <!--leaflet.ajax for asynchronously adding geojson data-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-ajax/2.1.0/leaflet.ajax.min.js"></script>
+
+    <!--mini globle map-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/topojson/1.6.19/topojson.min.js"></script>
+    <script src="../../js/globeminimap.js"></script>
+
+    <!--story map plugin-->
+    <script src="../../dist/storymap.2.5.js"></script>
+</head>
+<body>
+
+<div id="storymap" class="container-fluid">
+    <div class="row">
+        <div class="col-sm-6 col-md-4 storymap-story">
+            <section data-scene="overview" data-background="../../img/title.jpg">
+                <div class="fullscreen text-center">
+
+                    <h1 class="display-4 d-flex justify-content-center">Air Quality in the United States</h1>
+
+                    <small class="d-flex justify-content-center" style="color: rgba(255,255,255,0.95)">This story map
+                        illustrates the air quality in the United States using a storytelling structure. 
+                        Contributors: Bennett Olsen, Emily Eckey, Michael Tam, Ryan Singh, Trevor Nguyen
+                    </small>
+                </div>
+            </section>
+            <section data-scene="project">
+                <h2>Project Introduction</h2>
+                <p>Our final project looks at the cause and effect of air quality and CO2 emissions 
+                    in the United States. By showing the impact that air quality can have on health 
+                    and other factors, this project argues that more strides should be taken to reduce
+                    carbon emissions. To address what the root cause of the air quality issue is, 
+                    this project analyzes factors that cause air pollution such as carbon emissions 
+                    from industrial facilities, and correlated effects of poor air quality like 
+                    respiratory disease. The scope of the project is within the United States.</p>
+            </section>
+
+            <section data-scene="AQI">
+                <h2>AQI</h2>
+                <p>The U.S. AQI is the EPA index for reporting air quality. When AQI values are above 100, 
+                    air quality is unhealthy: at first for certain sensitive groups of people, then for 
+                    everyone as AQI values get higher. The AQI is divided into six categories. Each category 
+                    corresponds to a different level of health concern. Each category also has a specific color. 
+                    The color makes it easy for people to quickly determine whether air quality is reaching 
+                    unhealthy levels in their communities.</p>
+                <img src="../../img/AQI.png" class="img-responsive img-thumbnail" alt="responsive image"
+                    alt-text="AQI image">
+                <p>Discuss purpose of Map 1: show current status of air quality in US</p>
+                <p>Discuss purpose of by county representation/ importance of having 
+                    a geographical understanding of air pollution : to examine inequalities 
+                    in air quality</p>
+            </section>
+
+            <section data-scene="facilities">
+                <h2>Facility Level Air Pollution</h2>
+                <p>Understanding the causes of air pollution is a step towards knowing how to stop further pollution. 
+                    According to the EPA, 24% of greenhouse gas emissions in 2020 came from the industrial sector 
+                    (EPA, 2020). Examining where these facilities are located can be useful for examining the 
+                    geographical relationship between air quality and polluting factories. This map shows where 
+                    polluting factories are located in the United States by a proportional symbol representative of 
+                    how much emissions are coming from each facility. Facilities with higher emissions are 
+                    represented by larger symbols.</p>
+            </section>
+
+            <section data-scene="disease">
+                <h2>Chronic Respiratory Disease Mortality by US County</h2>
+                <p>Scene 3 shows chronic respiratory disease mortality in the United States by county</p>
+                <p>Poor air quality can leave harmful effects for the people who experience it. 
+                    With the increase in greenhouse gasses, ozone levels, and poor air quality over time, 
+                    we have also seen a rise in chronic respiratory disease mortality rates. Chronic respiratory 
+                    diseases affect the airways and structures of the lungs, leaving people with coughing, wheezing, 
+                    and difficulty breathing. Air pollution is a prominent risk factor for chronic respiratory 
+                    diseases, and people with conditions like asthma and chronic obstructive pulmonary disease may 
+                    find their condition worsening in areas of high air pollution.</p>
+                <img src="../../img/lungs.png" class="img-responsive img-thumbnail" alt="responsive image"
+                    alt-text="lungs image">
+            </section>
+
+            <section data-scene="socioeconomic">
+                <h2>Socioeconomic Status by US County</h2>
+                <p>Scene 4</p>
+                <p>It is important to contextualize your data with people, especially if we are discussing health outcomes. 
+                    So far, we have shown the potential correlation between greenhouse gas emissions and AQI, we expect a 
+                    linear relationship between these two variables. Furthermore, we visualize our response variable,  
+                    chronic respiratory disease mortality rate,  across the U.S to see if we can observe any 
+                    spatial relationship.</p>
+            </section>
+
+            <section data-scene="significance">
+                <h2>Project Significance</h2>
+                <p>The significance of our project is to inspire action. Typically, people do not feel the need to care 
+                    about certain disasters due to cognitive bias people do not personalize the consequences of certain 
+                    phenomena because they think it does not concern them. Thus, we hope to tell a story about how the 
+                    distribution of chronic respiratory illness can be correlated to air quality, socioeconomic status 
+                    and the locations of facilities outputting greenhouse gasses. We aim to develop an argument in which 
+                    facilities that produce high levels of greenhouse gasses are unjustly placed in low income communities. 
+                    We explore this correlation by comparing socioeconomic status to the locations of facilities outputting 
+                    greenhouse gas. We hope to highlight the correlation of wealth inequality affecting health outcomes 
+                    while focusing on the geospatial relationships of these variables.</p>
+            </section>
+
+            <section data-scene="end" data-background="../../img/title.jpg">
+                <div class="fullscreen text-center">
+                    <small class="d-flex justify-content-center" style="color: rgba(255,255,255,0.95)">Your
+                        Acknowledgement goes here
+                    </small>
+                </div>
+            </section>
+
+        </div>
+        <!--map div-->
+        <div class="col-sm-6 col-md-8 storymap-map"></div>
+    </div>
+
+
+    <dl>
+        <dt>
+            <!--facebook icon-->
+            <a class="fab fa-github btn" href="https://github.com/olsenbt/air-quality-map" style="top:40px"
+               target="_blank"></a>
+        </dt>
+        <dt>
+            <!--info icon-->
+            <i class="fas fa-info-circle btn" style="top:60px" data-toggle="modal" data-target="#info-modal"></i>
+        </dt>
+    </dl>
+
+    <!--the info page-->
+    <div class="modal fade" id="info-modal" role="dialog">
+        <div class="modal-dialog modal-md">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">About</h4>
+                </div>
+                <div class="modal-body">
+                    <p>This is a web map of air quality in the United States. The story map library is derived from the
+                        storymap plugin for leaflet at <a>http://atlefren.github.io/storymap/</a>, and its functionality
+                        relies on both leaflet and Boostrap.</p>
+                    <p><b>storymap.js</b> | Released Date: 02/20/2017 | Version: 2.5 | MIT License </p>
+                    <p><b>Authors: Bennett Olsen, Emily Eckey, Michael Tam, Ryan Singh, Trevor Nguyen</b> | Geography Department | University of Washington
+                    </p>
+                    <p>This story map uses geospatial data from mapbox.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- main javascript -->
+<script type="text/javascript">
+
+
+    // Create Legend Contents in html format
+    var county_legend = '<i style="background: orange; opacity: 0.5"></i><p><b>Counties</b></p>';
+    var forest_legend = '<i style="background: green; opacity: 0.5"></i><p><b>Forest</b></p>';
+
+    // For each layer, the first variable is the layer, the second is the legend. The layer variable can be any kinds of layers that leaflet.js supports.
+    // var layers = {
+    //      layer1: {layer: layer1, legend: legend1},
+    //      layer2: {layer: layer2, legend: legend2}
+    //      ...
+    // }
+
+    var layers = {
+        ESRI: {layer: L.tileLayer('http://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}')},
+        counties: {
+            layer: L.geoJson.ajax('../../assets/counties.geojson', {
+                color: 'orange',
+                weight: 2,
+                opacity: 0.3
+            }), legend: county_legend
+        },
+        GEE: {
+            layer: L.tileLayer('http://earthengine.google.org/static/hansen_2013/tree_alpha/{z}/{x}/{y}.png'),
+            legend: forest_legend
+        },
+        satellite: {
+            layer: L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoiamFrb2J6aGFvIiwiYSI6ImNpcms2YWsyMzAwMmtmbG5icTFxZ3ZkdncifQ.P9MBej1xacybKcDN_jehvw', {
+                id: 'mapbox.satellite'
+            })
+        },
+        cartodb_light: {layer: L.tileLayer('http://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png')}
+    };
+
+    var scenes = {
+        overview: {lat: 44.0000000, lng: -123.5000000, zoom: 7, name: 'Cover Page', layers: []},
+        project: {lat: 45.5186089, lng: -122.7270297, zoom: 11, name: 'Project', layers: []},
+        aqi: {lat: 44.5701158, lng: -123.2949388, zoom: 14, name: 'AQI', layers: [layers.ESRI]},
+        facilities: {lat: 44.0549563, lng: -123.0958048, zoom: 13, name: 'Facilities', layers: []},
+        disease: {lat: 44.9419055, lng: -123.0356407, zoom: 13, name: 'Disease', layers: []},
+        socioeconomic: {lat: 44.0519385, lng: -121.3042125, zoom: 14, name: 'Socioeconomic', layers: [layers.counties, layers.satellite]},
+        significance: {lat: 44.0000000, lng: -123.5000000, zoom: 7, name: 'Significance', layers: [layers.GEE]},
+        end: {lat: 44.0000000, lng: -123.5000000, zoom: 7, name: 'The End'}
+    };
+
+    $('#storymap').storymap({
+        scenes: scenes,
+        baselayer: layers.cartodb_light,
+        legend: true, // if you do not want a legend feature, you can simply not define the createLegend function.
+        credits: "",
+        loader: true,
+        scalebar: false,
+        flyo: true,
+        navwidget: true,
+
+        createMap: function () {
+            // create a map in the "map" div, set the view to a given place and zoom
+            var map = L.map($(".storymap-map")[0], {
+                zoomControl: false, scrollWheelZoom: false, fadeAnimation: true,
+                zoomAnimation: true
+            }).setView([44, -120], 7);
+
+            //add an miniglobe
+            new L.Control.GlobeMiniMap({
+                marker: 'red',
+                position: 'bottomright'
+            }).addTo(map);
+
+
+            return map;
+        }
+    });
+</script>
+</body>
+</html>
