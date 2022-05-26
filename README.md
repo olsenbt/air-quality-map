@@ -8,6 +8,8 @@ Our final project looks at the cause and effect of air quality and CO2 emissions
 
 Visit our final project [here](https://olsenbt.github.io/air-quality-map/)!
 
+Link to [About Us](https://olsenbt.github.io/air-quality-map/about.html)
+
 # Maps and Primary Map Functions
 - Link to [Map 2](https://olsenbt.github.io/air-quality-map/map2.html)
 - Link to [Map 3](https://olsenbt.github.io/air-quality-map/map3.html)
