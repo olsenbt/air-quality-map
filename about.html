@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 20%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+}
+
+.about-section {
+  padding: 50px;
+  text-align: center;
+  background-color: #474e5d;
+  color: white;
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="about-section">
+  <h1>About Us Page</h1>
+  <p>We are a group of students in Geography 458: Advanaced Digital Geographies at the University of Washington. 
+    We hope for our final project to identify the impact of poor air quality in general and where in the 
+    United States people are experiencing its worst effects. Once our project establishes the causes, 
+    correlates, and locations of poor air quality, legislators and regulatory agencies would be able to 
+    enact restrictions on industry and vehicular emissions.</p>
+  <p>The significance of our project is to inspire action. Typically, people do not feel the need to care 
+    about certain disasters due to cognitive bias people do not personalize the consequences of certain 
+    phenomena because they think it does not concern them. Thus, we hope to tell a story about how the 
+    distribution of chronic respiratory illness can be correlated to air quality, socioeconomic status 
+    and the locations of facilities outputting greenhouse gasses. We aim to develop an argument in which 
+    facilities that produce high levels of greenhouse gasses are unjustly placed in low income communities. 
+    As we explore this correlation by comparing socioeconomic status to the locations of facilities outputting 
+    greenhouse gas, we hope to highlight the correlation of wealth inequality affecting health outcomes 
+    while focusing on the geospatial relationships of these variables.</p>
+</div>
+
+<h2 style="text-align:center">Our Team</h2>
+<div class="row">
+
+  <div class="column">
+    <div class="card">
+      <img src="/img/Emily.png" alt="Emily" style="width:100%">
+      <div class="container">
+        <h2>Emily Eckey</h2>
+        <p class="title">Index and CSS Designer</p>
+        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <img src="/w3images/team3.jpg" alt="John" style="width:100%">
+      <div class="container">
+        <h2>Michael Tam</h2>
+        <p class="title">Map 1 Designer</p>
+        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="/w3images/team1.jpg" alt="Jane" style="width:100%">
+      <div class="container">
+        <h2>Bennett Olsen</h2>
+        <p class="title">Map 2 Designer</p>
+        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="/w3images/team2.jpg" alt="Mike" style="width:100%">
+      <div class="container">
+        <h2>Ryan Singh</h2>
+        <p class="title">Map 3 Designer</p>
+        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="/w3images/team2.jpg" alt="Mike" style="width:100%">
+      <div class="container">
+        <h2>Trevor Nguyen</h2>
+        <p class="title">Map 4 Designer</p>
+        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+</body>
+</html>
