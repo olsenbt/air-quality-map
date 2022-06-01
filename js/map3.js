@@ -10,7 +10,7 @@ center: [-100, 40] // starting center
 
 // load data and add as layer
 async function geojsonFetch() {
-let response = await fetch('assets/map3/CRD2.geojson');
+let response = await fetch('assets/map3/data.geojson');
 let countyData = await response.json();
 
 map.on('load', function loadingData() {
@@ -89,7 +89,7 @@ map.on('mousemove', ({point}) => {
         `<h3>${state[0].properties.crd_Field1}</h3><p><strong><em>${state[0].properties.Pct_Change}</strong>% change</em></p>` :
         `<p>Mortality rate % change is for 1985-2014.
         Hover over a county!</p>
-        <p style="text-align: right; font-size:10pt">Source: <a href="https://github.com/nytimes/covid-19-data/blob/43d32dde2f87bd4dafbb7d23f5d9e878124018b8/live/us-counties.csv">The New York Times</a></p>`;
+        <p style="text-align: right; font-size:10pt">Source: <a href="https://ghdx.healthdata.org/record/ihme-data/united-states-chronic-respiratory-disease-mortality-rates-county-1980-2014">The Global Health Data Exchange</a></p>`;
 });
 }
 
