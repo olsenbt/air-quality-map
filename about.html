@@ -2,6 +2,7 @@
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="css/styles.css" rel="stylesheet" />
 <style>
 body {
   font-family: Arial, Helvetica, sans-serif;
@@ -76,17 +77,17 @@ html {
 <body>
 
 <div class="about-section">
-  <h1>About Us Page</h1>
-  <p>We are a group of students in Geography 458: Advanaced Digital Geographies at the University of Washington. 
+  <h1>About Us</h1>
+  <p class="lead">We are a group of students in Geography 458: Advanced Digital Geographies at the University of Washington. 
     We hope for our final project to identify the impact of poor air quality in general and where in the 
     United States people are experiencing its worst effects. Once our project establishes the causes, 
     correlates, and locations of poor air quality, legislators and regulatory agencies would be able to 
-    enact restrictions on industry and vehicular emissions.</p>
+    enact restrictions on industry emissions.</p>
 </div>
 
+<br>
 <h2 style="text-align:center">Our Team</h2>
 <div class="row">
-
   <div class="column">
     <div class="card">
       <img src="img/Emily.png" alt="Emily Eckey" style="width:100%">
@@ -155,22 +156,19 @@ html {
     <div class="col-lg-12">
         <br>
         <h2 style="text-align:center">Data Sources</h2>
-        <p>Data sources for map 1 are from the [EPA](https://www.epa.gov/outdoor-air-quality-data/air-quality-statistics-report) 
+        <p>Data sources for map 1 are from the <a href="https://www.epa.gov/outdoor-air-quality-data/air-quality-statistics-report">EPA</a>
             and introduces air pollution data in the United States and the measurement of AQI. It analyzes counties with the worst 
-            air pollution in 2020 and 2010. </p>
-        <p>Data sources for map 2 are from the 
-            [EPA](https://ghgdata.epa.gov/ghgp/main.do#/facility/?q=Find%20a%20Facility%20or%20Location&st=&bs=&et=&fid=&sf=11001100&lowE=-20000&highE=23000000&g1=1&g2=1&g3=1&g4=1&g5=1&g6=0&g7=1&g8=1&g9=1&g10=1&g11=1&g12=1&s1=1&s2=1&s3=1&s4=1&s5=1&s6=1&s7=1&s8=1&s9=1&s10=1&s201=1&s202=1&s203=1&s204=1&s301=1&s302=1&s303=1&s304=1&s305=1&s306=1&s307=1&s401=1&s402=1&s403=1&s404=1&s405=1&s601=1&s602=1&s701=1&s702=1&s703=1&s704=1&s705=1&s706=1&s707=1&s708=1&s709=1&s710=1&s711=1&s801=1&s802=1&s803=1&s804=1&s805=1&s806=1&s807=1&s808=1&s809=1&s810=1&s901=1&s902=1&s903=1&s904=1&s905=1&s906=1&s907=1&s908=1&s909=1&s910=1&s911=1&si=&ss=&so=0&ds=E&yr=2020&tr=current&cyr=2020&ol=0&sl=0&rs=ALL) 
+            air pollution in 2020 and 2010. Data sources for map 2 are from the
+            <a href="https://ghgdata.epa.gov/ghgp/main.do#/facility/?q=Find%20a%20Facility%20or%20Location&st=&bs=&et=&fid=&sf=11001100&lowE=-20000&highE=23000000&g1=1&g2=1&g3=1&g4=1&g5=1&g6=0&g7=1&g8=1&g9=1&g10=1&g11=1&g12=1&s1=1&s2=1&s3=1&s4=1&s5=1&s6=1&s7=1&s8=1&s9=1&s10=1&s201=1&s202=1&s203=1&s204=1&s301=1&s302=1&s303=1&s304=1&s305=1&s306=1&s307=1&s401=1&s402=1&s403=1&s404=1&s405=1&s601=1&s602=1&s701=1&s702=1&s703=1&s704=1&s705=1&s706=1&s707=1&s708=1&s709=1&s710=1&s711=1&s801=1&s802=1&s803=1&s804=1&s805=1&s806=1&s807=1&s808=1&s809=1&s810=1&s901=1&s902=1&s903=1&s904=1&s905=1&s906=1&s907=1&s908=1&s909=1&s910=1&s911=1&si=&ss=&so=0&ds=E&yr=2020&tr=current&cyr=2020&ol=0&sl=0&rs=ALL">EPA</a>  
             and show 2020 GHG emissions from large facilities  in million metric tons CO2e. The primary function of this map is to 
-            identify locations of high GHG emissions and the facilities they come from.</p>
-        <p>Data sources for map 3 are from [Global Health Data Exchange](https://ghdx.healthdata.org/record/ihme-data/united-states-chronic-respiratory-disease-mortality-rates-county-1980-2014) 
+            identify locations of high GHG emissions and the facilities they come from. Data sources for map 3 are from <a href="https://ghdx.healthdata.org/record/ihme-data/united-states-chronic-respiratory-disease-mortality-rates-county-1980-2014">Global Health Data Exchange</a>
             and show United States Chronic Respiratory Disease Mortality Rates by County 1980-2014. 
             The primary features of this map will be a toggle that will allow the user to switch 
             between years to view how the mortality rate of chronic respiratory disease changes 
-            in the United States over time.</p>
-        <p>Data sources for map 4 are from [ArcGIS REST Services Directory](https://services1.arcgis.com/4yjifSiIG17X0gW4/arcgis/rest/services/SES_indicators/FeatureServer/1) 
+            in the United States over time. Data sources for map 4 are from <a href="https://services1.arcgis.com/4yjifSiIG17X0gW4/arcgis/rest/services/SES_indicators/FeatureServer/1">ArcGIS REST Services Directory</a> 
             and show census tracts with their unemployment rates.</p>
         <h2 style="text-align:center">Acknowledgement</h2>
-        <p style="text-align:justify">
+        <p style="text-align:center">
             Thank you Professor Zhao and Jiaxin Feng for your assistance with this final project.<br>
         </p>
     </div>
