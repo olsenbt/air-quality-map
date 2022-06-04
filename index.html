@@ -10,6 +10,7 @@
         <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
+        <link href="css/styles2.css" rel="stylesheet" />
     </head>
     <body>
         
@@ -30,18 +31,17 @@
                 </div>
             </div>
         </nav>
+
+        <!-- Header-->
+        <header class="masthead d-flex align-items-center">
+            <div class="container px-4 px-lg-5 text-center">
+                <h1 class="mb-1">Air Quality in the United States</h1>
+                <p class="lead">Contributors: Bennett Olsen, Emily Eckey, Michael Tam, Ryan Singh, and Trevor Nguyen</p>
+            </div>
+        </header>
         
         <!-- Page content-->
         <br>
-        <br>
-        <div class="container">
-            <div class="text-center mt-5">
-                <h1>Air Quality in the United States</h1>
-                <p class="lead">Contributors: Bennett Olsen, Emily Eckey, Michael Tam, Ryan Singh, Trevor Nguyen</p>
-            </div>
-            <img src="img/title.jpg" alt="Cover Image" style="width:100%">
-        </div>
-
         <section id="intro">
             <div class="container px-4">
                 <div class="row gx-4 justify-content-center">
@@ -57,12 +57,12 @@
                             from industrial facilities, and correlated effects of poor air quality like 
                             respiratory disease. The scope of the project is within the United States.
                         </p>
-                        <h3>Multimedia</h3>
                         <ul>
                             <iframe width="560" height="315" src="https://www.youtube.com/embed/e6rglsLy1Ys" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                             <br>
                             <a href="https://youtu.be/e6rglsLy1Ys"> Air Pollution 101 National Geographic </a>
                         </ul>
+                        <br>
                         <h3>Project Goal and Significance</h3>
                         <p class="lead">
                             The goal of this project is to inspire action. Traditionally, people do not 
@@ -76,6 +76,160 @@
                             of facilities outputting greenhouse gas, we hope to highlight the correlation 
                             of wealth inequality affecting health outcomes 
                             while focusing on the geospatial relationships of these variables.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- AQI Map -->
+        <br>
+        <section id="AQI">
+            <div class="container px-4">
+                <div class="row gx-4 justify-content-center">
+                    <div class="col-lg-8">
+                        <h3>Air Pollution Data and AQI</h3>
+                        <p class="lead"> The United States Environmental Protection Agency (EPA) has developed the Air Quality 
+                            Index, or AQI that ranges from 0 to 500. The AQI is divided into six categories varying 
+                            by severity of health concern. An AQI value over 300 represents hazardous air quality and 
+                            below 50 the air quality is good. EPA establishes an AQI for five major air pollutants regulated 
+                            by the Clean Air Act. Each of these pollutants has a national air quality standard set 
+                            by EPA to protect public health: ground-level ozone, particle pollution (also known as particulate matter, including PM2.5 and PM10), 
+                            carbon monoxide, sulfur dioxide, and nitrogen dioxide</p>
+                        <img src="img/AQI.jpg" alt="Cover Image" style="width:100%">
+                        <p class="lead">
+                            This map introduces the topic of air pollution in the United States by 
+                            giving the audience a look at a 10 year change in air quality in the United States 
+                            from 2010 to 2020. This gives the reader background information on the current 
+                            trends in air quality over time in recent years as well as the current state of 
+                            air quality in the United States today. By starting with this map, our group 
+                            has room to expand on various causes and effects of air quality by first giving 
+                            the reader necessary background information on the topic.
+                        </p>
+                        <div class="col-lg-10">
+                            <a class="portfolio-item" href="map2.html">
+                                <div class="caption">
+                                    <div class="caption-content">
+                                        <p class="mb-0">Click to view</p>
+                                    </div>
+                                </div>
+                                <img class="img-fluid" src="/img/map2test.png" alt="..."/>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Emissions Map -->
+        <br>
+        <section id="emissions">
+            <div class="container px-4">
+                <div class="row gx-4 justify-content-center">
+                    <div class="col-lg-8">
+                        <h3>Facility Level Emissions</h3>
+                        <p class="lead">
+                            Understanding the causes of air pollution is a step towards knowing how to stop further 
+                            pollution. According to the EPA, 24% of greenhouse gas emissions in 2020 came from the 
+                            industrial sector (EPA, 2020). Examining where these facilities are located can be useful for examining 
+                            the geographical relationship between air quality and polluting factories. This map shows 
+                            where polluting factories are located in the United States by a proportional symbol 
+                            representative of how much emissions are coming from each facility. Facilities with higher emissions are represented by larger symbols.
+                        </p>
+                        <div class="col-lg-10">
+                            <a class="portfolio-item" href="map2.html">
+                                <div class="caption">
+                                    <div class="caption-content">
+                                        <p class="mb-0">Click to view</p>
+                                    </div>
+                                </div>
+                                <img class="img-fluid" src="/img/map2test.png" alt="..."/>
+                            </a>
+                        </div>
+                        <p class="lead">
+                            In this section, our group looks into one of the causes of air pollution in order to find 
+                            a geographical connection between air quality and air polluters. This map represents the cause of our issue, 
+                            whereas a later map examines the effects. By representing industrial air polluters with 
+                            a proportional symbols map, the largest polluters will be distinctly shown with a larger 
+                            symbol, making it clearer to the reader which factories are causing the most harm to the 
+                            environment and where. This furthers our story by prompting the audience to engage with 
+                            one of the causes behind the air pollution shown in map 1.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Respiratory Disease Map -->
+        <br>
+        <section id="disease">
+            <div class="container px-4">
+                <div class="row gx-4 justify-content-center">
+                    <div class="col-lg-8">
+                        <h3>Chronic Respiratory Disease Mortality in the United States </h3>
+                        <p class="lead">
+                            Poor air quality can leave harmful effects for the people who experience it. With the increase 
+                            in greenhouse gasses, ozone levels, and poor air quality over time, we have also seen a 
+                            rise in chronic respiratory disease mortality rates. Chronic respiratory diseases 
+                            affect the airways and structures of the lungs, leaving people with coughing, wheezing, 
+                            and difficulty breathing. Air pollution is a prominent risk factor for chronic respiratory 
+                            diseases, and people with conditions like asthma and chronic obstructive pulmonary disease 
+                            may find their condition worsening in areas of high air pollution.
+                        </p>
+                        <img src="img/lungs.png" alt="Cover Image" style="width:100%">
+                        <p class="lead">
+                            In this section of the storyline, we are emphasizing the negative impact that air pollution 
+                            and poor air quality has on the health of the people afflicted by it. The map will show that 
+                            chronic respiratory diseases have increased in the United States over time, and the viewer 
+                            will be able to see the correlation between counties with poor air quality and counties 
+                            with high mortality rates from chronic respiratory disease. At this point of the story, 
+                            we are emphasizing WHY people should care about air pollution.
+                        </p>
+                        <div class="col-lg-10">
+                            <a class="portfolio-item" href="map2.html">
+                                <div class="caption">
+                                    <div class="caption-content">
+                                        <p class="mb-0">Click to view</p>
+                                    </div>
+                                </div>
+                                <img class="img-fluid" src="/img/map2test.png" alt="..."/>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Socioeconomic Status Disease -->
+        <br>
+        <section id="socioeconomic">
+            <div class="container px-4">
+                <div class="row gx-4 justify-content-center">
+                    <div class="col-lg-8">
+                        <h3>Socioeconomic Status in United States</h3>
+                        <p class="lead">
+                            It is important to contextualize your data with people, especially if we are discussing health 
+                            outcomes. So far, we have shown the potential correlation between greenhouse gas emissions and 
+                            AQI, we expect a linear relationship between these two variables. Furthermore, we visualize our 
+                            response variable, chronic respiratory disease mortality rate, across the U.S to see if we 
+                            can observe any spatial relationship. 
+                        </p>
+                        <div class="col-lg-10">
+                            <a class="portfolio-item" href="map2.html">
+                                <div class="caption">
+                                    <div class="caption-content">
+                                        <p class="mb-0">Click to view</p>
+                                    </div>
+                                </div>
+                                <img class="img-fluid" src="/img/map2test.png" alt="..."/>
+                            </a>
+                        </div>
+                        <p class="lead">
+                            We aim to develop an argument in which facilities that produce high levels of greenhouse gasses 
+                            are unjustly placed in low income communities. We explore this correlation by comparing 
+                            socioeconomic status to the locations of facilities outputting greenhouse gas. We hope to 
+                            highlight the correlation of wealth inequality affecting health outcomes while focusing on the 
+                            geospatial relationships of these variables. 
                         </p>
                     </div>
                 </div>
