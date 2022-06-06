@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="dist/output.css" />
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.8.1/mapbox-gl.js"></script>
+    <link
+      href="https://api.mapbox.com/mapbox-gl-js/v2.8.1/mapbox-gl.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <script src="src/map1.js" async></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <nav class="bg-gray-800">
+      <div class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
+        <div class="relative flex items-center justify-between h-16">
+          <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
+            <!-- Mobile menu button-->
+            <button type="button" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" aria-controls="mobile-menu" aria-expanded="false">
+              <span class="sr-only">Open main menu</span>
+              <!--
+                Icon when menu is closed.
+    
+                Heroicon name: outline/menu
+    
+                Menu open: "hidden", Menu closed: "block"
+              -->
+              <svg class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+              </svg>
+              <!--
+                Icon when menu is open.
+    
+                Heroicon name: outline/x
+    
+                Menu open: "block", Menu closed: "hidden"
+              -->
+              <svg class="hidden h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+              </svg>
+            </button>
+          </div>
+          <div class="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start">
+            <div class="flex-shrink-0 flex items-center">
+              <h1 class="text-xl text-white">Air Quality in the United States</h1>
+            </div>
+            <div class="hidden sm:block sm:ml-6">
+              <div class="flex space-x-4">
+                <a href="index.html" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Home</a>
+                <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+                <a href="#" class="bg-gray-900 text-white px-3 py-2 rounded-md text-sm font-medium" aria-current="page">AQI</a>
+    
+                <a href="map2.html" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Emissions</a>
+    
+                <a href="map3.html" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Respiratory Disease</a>
+
+                <a href="map4.html" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Socioeconomic Status</a>
+
+                <a href="about.html" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">About</a>
+              </div>
+            </div>
+          </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="grid md:grid-cols-2 gap-2">
+      <div
+        id="map"
+        class="h-full w-11/12 border-2 border-solid border-sky-400 rounded-lg ml-8 mt-4"
+      ></div>
+      <div class="pr-16">
+        <div
+          class="leading-6 border-solid border-2 border-sky-500 p-8 text-center mt-4 rounded-lg"
+        >
+          <h1 class="font-bold text-3xl mb-2">US Median AQI 2020</h1>
+          <div id="pd" class="mb-2 text-xl font-semibold">
+            <p>Hover over a county!</p>
+          </div>
+          <hr />
+          <div class="mb-2 mt-2 text-sm">
+            <p>
+              The EPA defines the AQI median as "Half of daily AQI values during
+              the year were less than or equal to the median value, and half
+              equaled or exceeded it." Undefined AQI represents no data from the
+              EPA.
+            </p>
+          </div>
+          <hr />
+          <a
+            href="https://aqs.epa.gov/aqsweb/airdata/download_files.html#Annual"
+            class="hover:underline"
+            target="_blank"
+          >
+            AQI Data - EPA
+          </a>
+          <br />
+          <a
+            href="https://www.census.gov/geographies/mapping-files/time-series/geo/carto-boundary-file.html"
+            class="hover:underline"
+            target="_blank"
+          >
+            County Data - US Census Bureau
+          </a>
+        </div>
+        <div class="grid grid-cols-2 gap-2">
+          <div
+            class="border-solid border-2 border-sky-400 p-4 rounded-lg mt-4 text-left"
+            id="legend"
+          >
+            <h3 class="text-2xl mb-4">AQI</h3>
+          </div>
+          <div
+            class="border-solid border-2 border-sky-400 p-4 rounded-lg mt-4 flex justify-center"
+          >
+            <div>
+              <h3 class="text-xl">
+                2020 Median AQI:
+                <span class="text-orange-500 font-bold">33</span>
+              </h3>
+              <h3 class="text-lg">
+                Counties Reporting:
+                <span class="text-orange-500 font-bold">1099</span>
+              </h3>
+              <h3 class="text-lg">
+                Highest:
+                <span class="text-orange-500 font-bold"
+                  >New Madrid County, MO (117)</span
+                >
+              </h3>
+              <h3 class="text-lg">
+                2019 Median AQI:
+                <span class="text-orange-500 font-bold">36</span>
+              </h3>
+            </div>
+          </div>
+        </div>
+        <div
+          class="border-solid border-2 border-sky-400 p-4 rounded-lg mt-4 pb-8"
+        >
+          <div class="text-md">
+            <h3 class="hover:underline text-lg mb-4">
+              <a
+                href="https://www.epa.gov/outdoor-air-quality-data/air-data-basic-information"
+                target="_blank"
+                class="font-semibold"
+              >
+                The EPA defines AQI levels as:
+              </a>
+            </h3>
+            <h4 class="mb-2">
+              <b>0-50: Good </b> - Air quality is considered satisfactory, and
+              air pollution poses little or no risk.
+            </h4>
+            <h4 class="mb-2">
+              <b>51-100: Moderate</b> - Air quality is acceptable; however, for
+              some pollutants there may be a moderate health concern for a very
+              small number of people.
+            </h4>
+            <h4 class="mb-2">
+              <b>101-150: Unhealthy for Sensitive Groups</b> - Although general
+              public is not likely to be affected at this AQI range, people with
+              lung disease, older adults and children are at a greater risk from
+              exposure to ozone, whereas persons with heart and lung disease,
+              older adults and children are at greater risk from the presence of
+              particles in the air.
+            </h4>
+            <h4 class="mb-2">
+              <b>151-200: Unhealthy</b> - Everyone may begin to experience some
+              adverse health effects, and members of the sensitive groups may
+              experience more serious effects.
+            </h4>
+            <h4 class="mb-2">
+              <b>201-300: Very Unhealthy</b> - This would trigger a health alert
+              signifying that everyone may experience more serious health
+              effects.
+            </h4>
+            <h4 class="mb-2">
+              <b>301-500: Hazardous</b> - This would trigger health warnings of
+              emergency conditions. The entire population is more likely to be
+              affected.
+            </h4>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="grid grid-cols-2 gap-2 mt-4 mb-4">
+      <div
+        id="map2"
+        class="h-full w-11/12 border-2 border-solid rounded-xl ml-8 mt-4"
+      ></div>
+      <div class="mr-16">
+        <div
+          class="leading-6 border-solid border-2 border-sky-400 p-8 text-center mt-4 rounded-lg"
+        >
+          <h1 class="font-bold text-3xl mb-2">US Median AQI 2010</h1>
+          <div id="pd2" class="mb-2 text-xl font-semibold">
+            <p>Hover over a county!</p>
+          </div>
+          <hr />
+          <div class="mb-2 mt-2 text-sm">
+            <p>
+              The EPA defines the AQI median as "Half of daily AQI values during
+              the year were less than or equal to the median value, and half
+              equaled or exceeded it." Undefined AQI represents no data from the
+              EPA.
+            </p>
+          </div>
+          <hr />
+          <a
+            href="https://aqs.epa.gov/aqsweb/airdata/download_files.html#Annual"
+            class="hover:underline"
+            target="_blank"
+          >
+            AQI Data - EPA
+          </a>
+          <br />
+          <a
+            href="https://www.census.gov/geographies/mapping-files/time-series/geo/carto-boundary-file.html"
+            class="hover:underline"
+            target="_blank"
+          >
+            County Data - US Census Bureau
+          </a>
+        </div>
+        <div class="grid grid-cols-2 gap-2">
+          <div
+            class="border-solid border-2 border-sky-400 p-4 rounded-lg mt-4 text-left"
+            id="legend2"
+          >
+            <h3 class="text-2xl mb-4">AQI</h3>
+          </div>
+          <div
+            class="border-solid border-2 border-sky-400 p-4 rounded-lg mt-4 text-center"
+          >
+            <h2 class="text-xl">
+              2010 Median AQI:<span class="text-orange-500 font-bold"> 38</span>
+            </h2>
+            <h3 class="text-lg">
+              Counties Reporting:<span class="text-orange-500 font-bold">
+                1099</span
+              >
+            </h3>
+            <h3 class="text-lg">
+              Highest:
+              <span class="text-orange-500 font-bold">Riverside, CA (87)</span>
+            </h3>
+          </div>
+        </div>
+        <div
+          class="border-solid border-2 border-sky-400 p-4 rounded-lg mt-4 pb-4"
+        >
+          <div class="text-md">
+            <h3 class="underline text-lg mb-4">
+              <a
+                href="https://www.epa.gov/outdoor-air-quality-data/air-data-basic-information"
+                target="_blank"
+              >
+                The EPA defines AQI levels as:
+              </a>
+            </h3>
+            <h4 class="mb-2">
+              <b>0-50: Good </b> - Air quality is considered satisfactory, and
+              air pollution poses little or no risk.
+            </h4>
+            <h4 class="mb-2">
+              <b>51-100: Moderate</b> - Air quality is acceptable; however, for
+              some pollutants there may be a moderate health concern for a very
+              small number of people.
+            </h4>
+            <h4 class="mb-2">
+              <b>101-150: Unhealthy for Sensitive Groups</b> - Although general
+              public is not likely to be affected at this AQI range, people with
+              lung disease, older adults and children are at a greater risk from
+              exposure to ozone, whereas persons with heart and lung disease,
+              older adults and children are at greater risk from the presence of
+              particles in the air.
+            </h4>
+            <h4 class="mb-2">
+              <b>151-200: Unhealthy</b> - Everyone may begin to experience some
+              adverse health effects, and members of the sensitive groups may
+              experience more serious effects.
+            </h4>
+            <h4 class="mb-2">
+              <b>201-300: Very Unhealthy</b> - This would trigger a health alert
+              signifying that everyone may experience more serious health
+              effects.
+            </h4>
+            <h4 class="mb-2">
+              <b>301-500: Hazardous</b> - This would trigger health warnings of
+              emergency conditions. The entire population is more likely to be
+              affected.
+            </h4>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
