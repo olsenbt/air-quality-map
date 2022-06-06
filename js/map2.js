@@ -43,7 +43,7 @@ map.on('load', () => {
                     ]
                 },
                 'circle-color': {
-                    'property': 'cases',
+                    'property': 'ghg_quantity',
                     'stops': [
                         [grades[0], colors[0]],
                         [grades[1], colors[1]],
