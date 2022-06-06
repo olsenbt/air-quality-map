@@ -11,6 +11,7 @@ Visit our final project [here](https://olsenbt.github.io/air-quality-map/)!
 Link to [About Us](https://olsenbt.github.io/air-quality-map/about.html)
 
 # Maps and Primary Map Functions
+- Link to [Map 1](https://olsenbt.github.io/air-quality-map/map1.html)
 - Link to [Map 2](https://olsenbt.github.io/air-quality-map/map2.html)
 - Link to [Map 3](https://olsenbt.github.io/air-quality-map/map3.html)
 - Link to [Map 4](https://olsenbt.github.io/air-quality-map/map4.html)
