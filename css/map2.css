@@ -51,12 +51,15 @@ p {
 }
 
 #legend {
+    position: absolute;
     padding: 10px;
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
     line-height: 18px;
     height: 200px;
     margin-bottom: 40px;
     width: 150px;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .legend-key {
@@ -69,6 +72,50 @@ p {
 
 a {
     color: black
+}
+
+.mapboxgl-canvas-container.mapboxgl-interactive,
+.mapboxgl-ctrl-group button.mapboxgl-ctrl-compass {
+    cursor: unset;
+}
+
+/* basic style for a dot/circle */
+.dot {
+    display: inline-block;
+    margin-top: 5px;
+    margin-right: 50px;
+    border-radius: 50%;
+    opacity: 0.6;
+}
+
+/* the label for the dot */
+.dot-label {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-style: italic;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.break {
+    position: relative;
+    margin: 0px;
+    padding: 0px;
+}
+
+#subtitle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: 70px;
+    margin-left: 190px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15pt;
+    color: white
 }
 
 .mapboxgl-canvas-container.mapboxgl-interactive,
