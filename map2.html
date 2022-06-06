@@ -7,10 +7,28 @@
     <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
     <link href="https://api.mapbox.com/mapbox-gl-js/v2.5.0/mapbox-gl.css" rel="stylesheet">
     <script src="https://api.mapbox.com/mapbox-gl-js/v2.5.0/mapbox-gl.js"></script>
+    <link href="css/styles2.css" rel="stylesheet" />
     <link rel="stylesheet" href="css/map2.css"/>
 </head>
 
 <body>
+    <!-- Responsive navbar-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Air Quality in the United States</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">AQI</a></li>
+                    <li class="nav-item"><a class="nav-link" href="map2.html">Emissions</a></li>
+                    <li class="nav-item"><a class="nav-link" href="map3.html">Respiratory Disease</a></li>
+                    <li class="nav-item"><a class="nav-link" href="map4.html">Socioeconomic Status</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
     <div id="map"></div>
     <div class='map-overlay' id='features'>
         <h2>US Facillity-Level Air Pollution 2011-2020</h2>
