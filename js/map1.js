@@ -35,8 +35,9 @@ map.on("load", () => {
     const color = colors[i];
     const item = document.createElement("div");
     const key = document.createElement("div");
-    item.className = 'text-xl'
-    key.className = `h-4 w-4 rounded-lg inline-block mr-4 bg-2020-${i}`;
+    item.className = 'fs-5'
+    key.id = `icon${i+1}`;
+    key.className = 'me-2'
 
     const value = document.createElement("span");
     value.innerHTML = `${layer}`;
@@ -53,7 +54,7 @@ map.on("mousemove", (event) => {
 
   document.getElementById("pd").innerHTML = states.length
     ? `<h3>${states[0].properties.NAME} County, ${states[0].properties.STATE_NAME}</h3>
-    <p>AQI: ${states[0].properties.aqi}</p>
+    <h5>AQI: ${states[0].properties.aqi}</h5>
     `
     : `<p>Hover over a county!</p>`;
 });
@@ -91,8 +92,10 @@ map2.on("load", () => {
   layers.forEach((layer, i) => {
     const item = document.createElement("div");
     const key = document.createElement("div");
-    item.className = 'text-xl'
-    key.className = `h-4 w-4 rounded-lg inline-block mr-4 bg-2020-${i}`;
+    key.className = 'key1'
+    key.id = `icon${i + 1}`
+    key.className = 'me-2'
+    item.className = 'fs-5'
 
     const value = document.createElement("span");
     value.innerHTML = `${layer}`;
@@ -109,7 +112,7 @@ map2.on("mousemove", (event) => {
 
   document.getElementById("pd2").innerHTML = states.length
     ? `<h3>${states[0].properties.COUNTYNAME} County, ${states[0].properties.STATE}</h3>
-    <p>AQI: ${states[0].properties.aqi}</p>
+    <h5>AQI: ${states[0].properties.aqi}</h5>
     `
     : `<p>Hover over a county!</p>`;
 });

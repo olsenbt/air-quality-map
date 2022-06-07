@@ -1,0 +1,61 @@
+:root {
+    --color-0: #ffffd4,
+    --color-1: #fee391,
+    --color-2: #fec44f,
+    --color-3: #fe9929,
+    --color-4: #ec7014,
+    --color-5: #cc4c02,
+    --color-6: #8c2d04,
+}
+
+.textcolor {
+    color: #ec7014
+}
+
+#icon1 {
+    height: 25px;
+    width: 25px;
+    background-color: #ffffd4;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+#icon2 {
+    height: 25px;
+    width: 25px;
+    background-color: #fee391;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+#icon3 {
+    height: 25px;
+    width: 25px;
+    background-color: #fec44f;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+#icon4 {
+    height: 25px;
+    width: 25px;
+    background-color: #fe9929;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+#icon5 {
+    height: 25px;
+    width: 25px;
+    background-color: #ec7014;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+#icon6 {
+    height: 25px;
+    width: 25px;
+    background-color: #cc4c02;
+    border-radius: 50%;
+    display: inline-block;
+}
