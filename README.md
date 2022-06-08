@@ -51,11 +51,11 @@ The map 2 data source is from the [EPA](https://ghgdata.epa.gov/ghgp/main.do#/fa
 The map 3 data source is from [Global Health Data Exchange](https://ghdx.healthdata.org/record/ihme-data/united-states-chronic-respiratory-disease-mortality-rates-county-1980-2014) and shows United States Chronic Respiratory Disease Mortality Rates by County 1980-2014. 
 
 The map 4 data source is from [ArcGIS REST Services Directory](https://services1.arcgis.com/4yjifSiIG17X0gW4/arcgis/rest/services/SES_indicators/FeatureServer/1) and shows census tracts with their unemployment rates. To define social class, the formula that the author conceptualized in the <a href="https://www.arcgis.com/home/item.html?id=2a98d90305364e71866443af2c9b5d06/">data source</a>, was used. This formula takes into consideration:
-<ul>- Median Household Income</ul> 
-<ul>- Percent of Individuals with Income below the Federal Poverty Line</ul>
-<ul>- Educational attainment of adults 25+</ul>
-<ul>- Unemployment Rate</ul>
-<ul>- Percent of households that are "female-headed" (no male preseent) </ul>
+- Median Household Income</ul> 
+- Percent of Individuals with Income below the Federal Poverty Line</ul>
+- Educational attainment of adults 25+</ul>
+- Unemployment Rate</ul>
+- Percent of households that are "female-headed" (no male preseent) </ul>
 And operated this value as <strong>Socioeconomic Status (SES) </strong>. 
                             
 With this new attribute, SES, that was computed through relevant factors that associate with socioeconomic status; the dataset was joined to a U.S. Census Tract shapefile, and produced a choropleth map which visualizes the distribution of Socioeconomic Status across the United States.
