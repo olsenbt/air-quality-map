@@ -77,7 +77,7 @@ map.on('load', () => {
 const legend = document.getElementById('legend');
 
 //set up legend grades and labels
-var labels = ['<strong>Emissions'], vbreak;
+var labels = ['<strong>Emissions (CO2e)'], vbreak;
 //iterate through grades and create a scaled circle and label for each
 for (var i = 0; i < grades.length; i++) {
 vbreak = grades[i];
