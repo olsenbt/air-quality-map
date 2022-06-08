@@ -12,8 +12,8 @@ Learn more [About Us](https://olsenbt.github.io/air-quality-map/about.html)
 
 # Maps and Primary Map Functions
 ### Link to [Map 1](https://olsenbt.github.io/air-quality-map/map1.html)
-![Map 1](/img/AQI2010.png "Map 1") ![Map 1](/img/AQI2020.png "Map 1") 
-- **Description:** This map introduces the topic of air pollution in the United States by giving the audience a look at a 10 year change in air quality in the United States from 2010 to 2020.
+![Map 1](/img/AQI2020.png "Map 1") 
+- **Description:** This map of AQI in 2020 introduces the topic of air pollution in the United States by giving the audience a look at a 10 year change in air quality in the United States compared to AQI in 2010.
 - **Primary Map Functions:** Interactive hover for metadata, Zoom feature
 
 ### Link to [Map 2](https://olsenbt.github.io/air-quality-map/map2.html)
