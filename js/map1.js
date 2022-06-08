@@ -8,7 +8,7 @@ const map = new mapboxgl.Map({
 });
 
 map.on("load", () => {
-  map.getCanvas().style.cursor = "default";
+  map.getCanvas().style.cursor = "pointer";
   const layers = [
     "0 - 14.7",
     "14.8 - 29.3",
@@ -59,6 +59,20 @@ map.on("mousemove", (event) => {
     : `<p>Hover over a county!</p>`;
 });
 
+map.addControl(new mapboxgl.FullscreenControl());
+map.on('click', (e) => {
+  const states = map.queryRenderedFeatures(e.point, {
+    layers: ["aqi-2020-v3"],
+  });
+
+  console.log(states)
+  new mapboxgl.Popup()
+    .setLngLat(e.lngLat)
+    .setHTML(`<h5>${states[0].properties.NAME} County, ${states[0].properties.STATE_NAME}</h5>
+    <h5>AQI: ${states[0].properties.aqi}</h5>`)
+    .addTo(map)
+})
+
 // 2010 map
 const map2 = new mapboxgl.Map({
   container: "map2",
@@ -66,7 +80,7 @@ const map2 = new mapboxgl.Map({
 });
 
 map2.on("load", () => {
-  map.getCanvas().style.cursor = "default";
+  map2.getCanvas().style.cursor = "pointer";
   const layers = [
     "0 - 10.88",
     "10.89 - 21.75",
@@ -116,3 +130,19 @@ map2.on("mousemove", (event) => {
     `
     : `<p>Hover over a county!</p>`;
 });
+
+
+map2.addControl(new mapboxgl.FullscreenControl());
+
+map2.on('click', (e) => {
+  const states = map2.queryRenderedFeatures(e.point, {
+    layers: ["aqi-2010"],
+  });
+
+  console.log(states)
+  new mapboxgl.Popup()
+    .setLngLat(e.lngLat)
+    .setHTML(`<h5>${states[0].properties.COUNTYNAME} County, ${states[0].properties.STATE}</h5>
+    <h5>AQI: ${states[0].properties.aqi}</h5>`)
+    .addTo(map2)
+})
