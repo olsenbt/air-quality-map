@@ -12,7 +12,7 @@ const map = new mapboxgl.Map({
 // load data and add as layer
 
 async function geojsonFetch() {
-    let response = await fetch('assets/map4/myData2.geojson');
+    let response = await fetch('assets/map4/myData3.geojson');
     let tractData = await response.json();
 
     map.on('load', function loadingData() {
@@ -51,9 +51,9 @@ async function geojsonFetch() {
             '<16',
             '16 - 38',
             '38 - 48',
-            '48 - 58',
+            '48 - 58<br></br> AFFLUENT',
             '58 - 69',
-            '69 - 92 HIGH SES'
+            '69 - 92'
         ];
         // #273859|#4a5d83|#6d81ac|#8fa5d6|#b2caff
         const colors = [
