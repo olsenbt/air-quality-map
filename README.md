@@ -4,7 +4,7 @@ June 8, 2022 \
 Team AC3 Members: Bennett Olsen, Emily Eckey, Michael Tam, Ryan Singh, Trevor Nguyen 
 
 ## Project Introduction
-Our final project looks at the cause and effect of air quality and CO2 emissions in the United States. By showing the impact that air quality can have on health and other factors, this project argues that more strides should be taken to reduce carbon emissions. To address what the root cause of the air quality issue is, this project analyzes factors that cause air pollution such as carbon emissions from industrial facilities, and correlated effects of poor air quality like respiratory disease. The project includes six pages: a title page to introduce the topic, 4 storymaps on cause and effect, a page about our team and to cite our data sources and give acknowledgement. The scope of the project will be within the United States.
+Our final project looks at the cause and effect of air quality and CO2 emissions in the United States. By showing the impact that air quality can have on health and other factors, this project argues that more strides should be taken to reduce carbon emissions. To address what the root cause of the air quality issue is, this project analyzes factors that cause air pollution such as carbon emissions from industrial facilities, and correlated effects of poor air quality like respiratory disease. The project includes six pages: a title page to introduce the topic, 4 maps on cause and effect, a page about our team and to cite our data sources and give acknowledgement. The scope of the project will be within the United States.
 
 Visit our [Final Project](https://olsenbt.github.io/air-quality-map/)
 
