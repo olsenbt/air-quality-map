@@ -11,22 +11,22 @@ Visit our final project [here](https://olsenbt.github.io/air-quality-map/)!
 Link to [About Us](https://olsenbt.github.io/air-quality-map/about.html)
 
 # Maps and Primary Map Functions
-Link to [Map 1](https://olsenbt.github.io/air-quality-map/map1.html)
+### Link to [Map 1](https://olsenbt.github.io/air-quality-map/map1.html)
 ![Map 1](/img/map2test.png "Map 1") 
 - **Description:** This map introduces the topic of air pollution in the United States by giving the audience a look at a 10 year change in air quality in the United States from 2010 to 2020.
 - **Primary Map Functions:** Interactive hover for metadata, Zoom feature
 
-Link to [Map 2](https://olsenbt.github.io/air-quality-map/map2.html)
+### Link to [Map 2](https://olsenbt.github.io/air-quality-map/map2.html)
 ![Map 2](/img/map2.png "Map 2") 
 - **Description:** This map shows where polluting factories are located in the United States using proportional symbols to represent emissions from each facility in order to find a geographical connection between air quality and air polluters.
 - **Primary Map Functions:** Interactive click for metadata, Zoom feature
 
-Link to [Map 3](https://olsenbt.github.io/air-quality-map/map3.html)
+### Link to [Map 3](https://olsenbt.github.io/air-quality-map/map3.html)
 ![Map 3](/img/map3.png "Map 3") 
 - **Description:** This map shows chronic respiratory disease mortality rates in the United States to represent a possible correlation between counties with poor air quality and counties with large increases in mortality rates from chronic respiratory disease.
 - **Primary Map Functions:** Interactive hover for metadata, Zoom feature
 
-Link to [Map 4](https://olsenbt.github.io/air-quality-map/map4.html)
+### Link to [Map 4](https://olsenbt.github.io/air-quality-map/map4.html)
 ![Map 4](/img/map2test.png "Map 4") 
 - **Description:** This map examines the rates of low income communities in the United States to highlight the correlation of wealth inequality affecting health outcomes while focusing on the geospatial relationships of these variables.
 - **Primary Map Functions:** Interactive hover for metadata, Zoom feature
