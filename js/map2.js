@@ -7,9 +7,9 @@ let map = new mapboxgl.Map({
     center: [-100, 40] // starting position [lng, lat]
 });
 
-const grades = [1000, 100000, 10000000],
-    colors = ['rgb(208,209,230)', 'rgb(120,120,0)', 'rgb(253,0,0)'],
-    radii = [5, 10, 20];
+const grades = [1000, 100000, 1000000, 10000000],
+    colors = ['rgb(208,209,230)', 'rgb(232, 232, 174)', 'rgb(240, 186, 122)', 'rgb(253,0,0)'],
+    radii = [5, 8, 11, 15];
 
 
 map.on('load', () => {
@@ -39,7 +39,11 @@ map.on('load', () => {
                         [{
                             zoom: 5,
                             value: grades[2]
-                        }, radii[2]]
+                        }, radii[2]],
+                        [{
+                            zoom: 5,
+                            value: grades[3]
+                        }, radii[3]]
                     ]
                 },
                 'circle-color': {
@@ -47,10 +51,11 @@ map.on('load', () => {
                     'stops': [
                         [grades[0], colors[0]],
                         [grades[1], colors[1]],
-                        [grades[2], colors[2]]
+                        [grades[2], colors[2]],
+                        [grades[3], colors[3]],
                     ]
                 },
-                'circle-stroke-color': 'white',
+                'circle-stroke-color': 'grey',
                 'circle-stroke-width': 1,
                 'circle-opacity': 0.6
             }
