@@ -43,17 +43,17 @@ async function geojsonFetch() {
                     91.7,
                     "#b30000"
                 ],
-                'fill-opacity': .9
+                'fill-opacity': .7
             }
         });
 
         const layers = [
-            '<16',
+            '> 16',
             '16 - 38',
             '38 - 48',
-            '48 - 58<br></br> AFFLUENT',
+            '48 - 58 <br></br> AFFLUENT',
             '58 - 69',
-            '69 - 92'
+            '69 - 92 '
         ];
         // #273859|#4a5d83|#6d81ac|#8fa5d6|#b2caff
         const colors = [
@@ -62,7 +62,7 @@ async function geojsonFetch() {
 
         // create legend
         const legend = document.getElementById('legend');
-        legend.innerHTML = "<b>Socioeconomic Status Score </b><br><br>";
+        legend.innerHTML = "<b>Socioeconomic Status Score  </b><br><br>";
 
 
         layers.forEach((layer, i) => {
