@@ -214,6 +214,25 @@
                             AQI, and expect a linear relationship between these two variables. Furthermore, we visualize our 
                             response variable, chronic respiratory disease mortality rate, across the U.S to see if we 
                             can observe any spatial relationship. 
+                            
+                            In the discussion of health outcomes and it's relation to geography, it is integral to contextualize data with people. After all, health outcomes 
+                            directly affect people, so it's helpful to provide some kind of context as to who is being affected by these health outcomes. Historically,
+                            people from marginalized communities such as BIPOC, have experienced systematic racism in that facilities, businesses, and other services are forced upon 
+                            local residents. Therefore, It is evident that a metric such as social class exists within the United States, and that people from a lower social class 
+                            are more likely to face hardships as opposed to people from a higher social class. 
+                            
+                            However, how do we define social class-- how can we quantify this? With my dataset from 
+                            <a href="https://www.arcgis.com/home/item.html?id=2a98d90305364e71866443af2c9b5d06/">Visit Data Source!</a>
+                            I followed the formula that the author conceptualized, which takes into consideration:
+                            <ul> Median Household Income</ul> 
+                            <ul> Percent of Individuals with Income below the Federal Poverty Line</ul>
+                            <ul> Educational attainment of adults 25+</ul>
+                            <ul> Unemployment Rate</ul>
+                            <ul> Percent of households that are "female-headed" (no male preseent) </ul>
+                            and operated this value as Socioeconomic Status (SES). 
+                            
+                            With this new attribute, SES, I joined the dataset to a U.S. Census Tract shapefile(which proved difficult as TIGER only allows the installation of one state shapefile at a time), 
+                            and produced a choropleth map which visualizes the distribution of Socioeconomic Status.
                         </p>
                         <div class="col-lg-10">
                             <a class="portfolio-item" href="map4.html">
