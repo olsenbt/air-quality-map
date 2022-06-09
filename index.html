@@ -213,7 +213,20 @@
                             directly affect people, so it's helpful to provide some kind of context as to who is being affected by these health outcomes. Historically,
                             people from marginalized communities such as BIPOC, have experienced systematic racism in that facilities, businesses, and other services are forced upon 
                             local residents. Therefore, due to this social inequality, it is evident that a metric such as social class exists within the United States, and that people from a lower social class 
-                            are more likely to face hardships, as opposed to people from a higher social class.
+                            are more likely to face hardships, as opposed to people from a higher social class. <br> </br>
+
+                             However, how do we define social class-- how can we quantify this? With my dataset from 
+                             <a href="https://www.arcgis.com/home/item.html?id=2a98d90305364e71866443af2c9b5d06/">Visit Data Source!</a>
+                             I followed the formula that the author conceptualized, which takes into consideration:
+                             <ul>- Median Household Income</ul> 
+                             <ul>- Percent of Individuals with Income below the Federal Poverty Line</ul>
+                             <ul>- Educational attainment of adults 25+</ul>
+                             <ul>- Unemployment Rate</ul>
+                             <ul>- Percent of households that are "female-headed" (no male preseent) </ul>
+                             And operated this value as <strong>Socioeconomic Status (SES) </strong>. <br></br>
+
+                             With this new attribute, SES, that was computed through relevant factors that associate with socioeconomic status; I joined the dataset to a U.S. Census Tract shapefile (very difficult as TIGER only allows the installation of one state shapefile at a time), 
+                             and produced a choropleth map which visualizes the distribution of Socioeconomic Status across the United States.
                         </p>
                         <div class="col-lg-10">
                             <a class="portfolio-item" href="map4.html">
@@ -222,13 +235,6 @@
                             </a>
                         </div>
                         <br>
-                        <p class="lead">
-                            To define social class in the map above, the formula from <a href="https://www.arcgis.com/home/item.html?id=2a98d90305364e71866443af2c9b5d06%2F">ARCGIS</a> was used. This formula takes into consideration the variables: Median Household 
-                            Income, Percent of Individuals with Income below the Federal Poverty Line, Educational attainment of adults 25+, Unemployment Rate, Percent of households that 
-                            are "female-headed", and operated this value as Socioeconomic Status (SES). With this new attribute, SES, that was computed through relevant factors that associate with 
-                            socioeconomic status; the dataset was joined to a U.S. Census Tract shapefile, and produced a choropleth map which visualizes the distribution of Socioeconomic Status across 
-                            the United States.
-                        </p>
                         <p class="lead">
                             Map 4 illustrates that GHG facilities may be placed in areas of low SES, and by connection an increase in respiratory disease mortality rate.
                             This correlation is explored by comparing socioeconomic status values to the spatial location of facilities outputting greenhouse gas. This 
