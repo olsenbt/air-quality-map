@@ -55,6 +55,7 @@ The map 4 data source is from [ArcGIS REST Services Directory](https://services1
 ## Applied libraries and Web Services in Use
 - Mapbox
 - GitHub
+- Bootstrap
 
 ## Credits
 - [Professor Zhao's GitHub Final Project Guidelines](https://github.com/jakobzhao/geog458/blob/master/project/readme.md)
